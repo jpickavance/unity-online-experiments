@@ -12,9 +12,10 @@ public class MouseMove : MonoBehaviour
     public List<string> timeList;
     public List<string> posxList;
     public List<string> poszList;
+    public List<string> mouseZList;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //Mouse position in pixels
         Vector3 mousePos = Input.mousePosition;
@@ -24,15 +25,15 @@ public class MouseMove : MonoBehaviour
         worldPos.y = transform.position.y;
         //update position of object based on calculated world pos
         transform.position = worldPos;
-
+        
         if(experimentController.moving == true)
         {
             timer = DateTime.Now - experimentController.trialBegin;
             string timeOutput = string.Format   ("{0}{1:000}",
                                                 (int)timer.TotalSeconds,
                                                 timer.Milliseconds);
-            string posxOutput = transform.position.x.ToString();
-            string poszOutput = transform.position.z.ToString();
+            string posxOutput = Math.Round(worldPos.x, 5).ToString();
+            string poszOutput = Math.Round(worldPos.z, 5).ToString();
             timeList.Add(timeOutput);
             posxList.Add(posxOutput);
             poszList.Add(poszOutput);

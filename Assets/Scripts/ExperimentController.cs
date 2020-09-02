@@ -52,12 +52,12 @@ public class ExperimentController : MonoBehaviour
         posxData = String.Join(", ", Cursor.posxList.ToArray());
         poszData = String.Join(", ", Cursor.poszList.ToArray());
         InsertData ("schoolTrialData",
-                    tokenId,
-                    trial.ToString(),
-                    movementTime.ToString(),
-                    timeData,
-                    posxData,
-                    poszData);                    
+                        tokenId,
+                        trial.ToString(),
+                        movementTime.ToString(),
+                        timeData,
+                        posxData,
+                        poszData);
         trial += 1;
         Cursor.timeList = new List<string>();
         Cursor.posxList = new List<string>();
