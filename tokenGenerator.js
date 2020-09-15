@@ -6,8 +6,8 @@ function generateTokens(length)
     AWS.config.update({
         region: "us-east-2",
         endpoint: "https://dynamodb.us-east-2.amazonaws.com",
-        accessKeyId: "YOUR ACCESS ID",
-        secretAccessKey: "YOUR SECRET KEY"
+        accessKeyId: "YOUR_ACCESS_ID",
+        secretAccessKey: "YOUR_SECRET_KEY"
     });
 
     var docClient = new AWS.DynamoDB.DocumentClient();

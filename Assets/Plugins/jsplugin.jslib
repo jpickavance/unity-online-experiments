@@ -17,8 +17,8 @@ mergeInto(LibraryManager.library,
         {
             region: "us-east-2",
             endpoint: "https://dynamodb.us-east-2.amazonaws.com",
-            accessKeyId: "YOUR ACCESS ID",
-            secretAccessKey: "YOUR SECRET KEY"
+            accessKeyId: "YOUR_ACCESS_ID",
+            secretAccessKey: "YOUR_SECRET_KEY"
         };
         AWS.config.update(awsConfig);
         var docClient = new AWS.DynamoDB.DocumentClient();
@@ -62,8 +62,8 @@ mergeInto(LibraryManager.library,
         {
             region: "us-east-2",
             endpoint: "https://dynamodb.us-east-2.amazonaws.com",
-            accessKeyId: "YOUR ACCESS ID",
-            secretAccessKey: "YOUR SECRET KEY"
+            accessKeyId: "YOUR_ACCESS_ID",
+            secretAccessKey: "YOUR_SECRET_KEY"
         };
         AWS.config.update(awsConfig);
         var docClient = new AWS.DynamoDB.DocumentClient();
@@ -98,8 +98,8 @@ mergeInto(LibraryManager.library,
         {
             region: "us-east-2",
             endpoint: "https://dynamodb.us-east-2.amazonaws.com",
-            accessKeyId: "YOUR ACCESS ID",
-            secretAccessKey: "YOUR SECRET KEY"
+            accessKeyId: "YOUR_ACCESS_ID",
+            secretAccessKey: "YOUR_SECRET_KEY"
         };
         AWS.config.update(awsConfig);
         var docClient = new AWS.DynamoDB.DocumentClient();
@@ -135,8 +135,8 @@ mergeInto(LibraryManager.library,
         {
             region: "us-east-2",
             endpoint: "https://dynamodb.us-east-2.amazonaws.com",
-            accessKeyId: "YOUR ACCESS ID",
-            secretAccessKey: "YOUR SECRET KEY"
+            accessKeyId: "YOUR_ACCESS_ID",
+            secretAccessKey: "YOUR_SECRET_KEY"
         };
         AWS.config.update(awsConfig);
         var docClient = new AWS.DynamoDB.DocumentClient();
